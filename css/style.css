@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #f4f4f4;
+    background: url('../images/site-background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #111;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 3rem;
+    color: gold;
+    margin: 0;
+}
+
+.tagline {
+    color: #C71585;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 0 10px black;
+}
+
+.section img {
+    float: right;
+    max-width: 200px;
+    margin-left: 2rem;
+    border-radius: 5px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.gallery img {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
