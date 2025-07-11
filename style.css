@@ -6,11 +6,12 @@
 }
 
 body, html {
-  height: 100%;
+  min-height: 100%;
   font-family: 'Garamond', 'Times New Roman', serif;
   color: #fdfdfd;
   background-color: #0b0b0b;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Background Crest */
