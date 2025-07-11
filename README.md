@@ -23,9 +23,7 @@ To house and showcase our art, connect with our community, and offer physical an
 ## 🌐 Live Site
 
 Visit us at:  
-**[eldrion-unlimited.github.io/eldrion-unlimited](https://eldrion-unlimited.github.io/eldrion-unlimited)**  
-or  
-**[eldrionunlimited.com](http://eldrionunlimited.com)**
+**[eldrionunlimited.com](https://eldrionunlimited.com)**
 
 ## 🧩 Roadmap
 
