@@ -15,7 +15,7 @@ body, html {
 
 /* Background Crest */
 .background {
-  background-image: url('images/crest1.png');
+  background-image: url('images/site-background.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
