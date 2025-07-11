@@ -1,106 +1,149 @@
-body {
+/* ===== Global Reset ===== */
+* {
   margin: 0;
   padding: 0;
-  background: #000;
-  color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Georgia', serif;
+  background: url("images/site-background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-header {
-  text-align: center;
-  padding: 40px 20px 20px;
-  background: #111;
+/* ===== Typography ===== */
+h1, h2 {
+  font-family: 'UnifrakturCook', cursive;
+  color: #ffd700;
+  font-weight: normal;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
 }
 
-header h1 {
+h1 {
   font-size: 3rem;
-  font-family: 'Old English Text MT', serif;
-  color: gold;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+/* ===== Layout & Sections ===== */
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-flex img.crest {
+  max-width: 150px;
+  height: auto;
+  filter: drop-shadow(0 0 5px gold);
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 nav a {
-  color: gold;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section {
-  margin: 60px 0;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  position: relative;
-  overflow: hidden;
-}
-
-h2 {
-  font-size: 2rem;
   color: #fff;
-  font-family: 'Old English Text MT', serif;
-  margin-top: 0;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  transition: color 0.2s ease;
 }
 
-p {
-  line-height: 1.6;
-  font-size: 1rem;
-  max-width: 650px;
+nav a:hover {
+  color: #ffd700;
 }
 
+/* ===== Hero ===== */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Images ===== */
+.icon {
+  width: 140px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  margin: 1rem 0;
+}
+
+/* ===== Buttons ===== */
 .enter-btn {
   display: inline-block;
-  margin-top: 15px;
-  background: gold;
-  color: black;
-  padding: 10px 18px;
-  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd700;
+  color: #000;
   font-weight: bold;
+  font-family: 'Georgia', serif;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #ffd700;
   text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.crest-img {
-  float: left;
-  max-width: 180px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+.enter-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff28f;
 }
 
-.nf-badge {
-  float: right;
-  width: 130px;
-  margin-left: 20px;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-
-.j-card {
-  float: right;
-  width: 150px;
-  margin-left: 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 8px rgba(255,255,255,0.25);
-}
-
+/* ===== Footer ===== */
 footer {
   text-align: center;
-  padding: 30px;
-  background: #111;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
   font-size: 0.9rem;
   color: #aaa;
+  margin-top: 4rem;
 }
