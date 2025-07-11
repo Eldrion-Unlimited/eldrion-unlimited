@@ -1,141 +1,106 @@
-/* Reset & Base Layout */
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  min-height: 100%;
-  font-family: 'Garamond', 'Times New Roman', serif;
-  color: #fdfdfd;
-  background-color: #0b0b0b;
+  background: #000;
+  color: #f5f5f5;
+  font-family: 'Georgia', serif;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
-/* Background Crest */
-.background {
-  background-image: url('images/site-background.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-  opacity: 0.04;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-/* Main Content */
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
+header {
   text-align: center;
+  padding: 40px 20px 20px;
+  background: #111;
 }
 
-h1 {
-  font-size: 3.5rem;
-  color: #ffd700;
+header h1 {
+  font-size: 3rem;
   font-family: 'Old English Text MT', serif;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 10px #ffd70088;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin: 60px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  position: relative;
+  overflow: hidden;
 }
 
 h2 {
   font-size: 2rem;
-  margin: 2.5rem 0 1rem;
-  color: #ffffff;
-  text-shadow: 0 0 5px #222;
+  color: #fff;
+  font-family: 'Old English Text MT', serif;
+  margin-top: 0;
 }
 
 p {
-  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
-  color: #ddd;
+  font-size: 1rem;
+  max-width: 650px;
 }
 
-/* Enter Now Buttons */
-.btn {
+.enter-btn {
   display: inline-block;
-  background: linear-gradient(to right, #ffd700, #ff8c00);
-  color: #000;
-  font-weight: bold;
-  padding: 0.75rem 1.5rem;
+  margin-top: 15px;
+  background: gold;
+  color: black;
+  padding: 10px 18px;
   border-radius: 8px;
-  margin-top: 1rem;
+  font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 0 15px #ffda44aa;
-  transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
-  background: linear-gradient(to right, #ffef9f, #ffa500);
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #ffd700cc;
+.crest-img {
+  float: left;
+  max-width: 180px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-/* Section Layout */
-section {
-  background-color: rgba(30, 30, 30, 0.7);
-  padding: 2rem;
-  border-radius: 16px;
-  margin: 2rem 0;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+.nf-badge {
+  float: right;
+  width: 130px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 
-/* Image Previews */
-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin: 1rem 0;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+.j-card {
+  float: right;
+  width: 150px;
+  margin-left: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(255,255,255,0.25);
 }
 
-/* About Section with Crest Image */
-.about-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.about-image {
-  flex: 1;
-  min-width: 200px;
+footer {
   text-align: center;
-}
-
-.about-image img {
-  max-width: 250px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
-}
-
-/* Responsive Tweak */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-image img {
-    margin-top: 1rem;
-  }
+  padding: 30px;
+  background: #111;
+  font-size: 0.9rem;
+  color: #aaa;
 }
